@@ -15,7 +15,7 @@
         }
         
         body {
-            background: linear-gradient(to bottom right, #ff758c, #ff7eb3);
+            background: linear-gradient(to bottom right, rgba(255, 117, 140, 0.8), rgba(255, 126, 179, 0.8)), url('image.png') no-repeat center center fixed;
             text-align: center;
             font-family: 'Raleway', sans-serif;
             opacity: 0;
@@ -102,14 +102,54 @@
 
         .pangram {
             margin-top: 20px;
-            font-size: 0.8rem;
-            font-family: 'Raleway', sans-serif;
+            font-size: 0.5rem;
+           font-family: 'Dancing Script', cursive;
             color: #ffeaa7;
             max-width: 80%;
         }
         .pangram span {
             font-weight: bold;
-            font-size: 3.0rem;
+            font-size: 3.5rem;
+        }
+   /* Heart Animation */
+        .heart {
+            position: absolute;
+            top: -10%;
+            width: 20px;
+            height: 20px;
+            background: #ff4757;
+            transform: rotate(-45deg);
+            animation: fall 5s linear infinite;
+        }
+        
+        .heart::before, .heart::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: #ff4757;
+            border-radius: 50%;
+        }
+        
+        .heart::before {
+            top: -10px;
+            left: 0;
+        }
+        
+        .heart::after {
+            top: 0;
+            left: 10px;
+        }
+        
+        @keyframes fall {
+            0% { top: -10%; }
+            100% { top: 110%; }
+        }
+.footer {
+            margin: 50px 0;
+            font-family: 'Dancing Script', cursive;
+            font-size: 1.2rem;
+            color: white;
         }
     </style>
 </head>
@@ -128,15 +168,25 @@
         <p>On this special day, I must confess, You light up my life, bringing happiness. With your heart so pure and true, May your birthday be filled with love and cheer.<br><br>For you, my dear, are so dear.<br><br><br>
         Happy Birthday to you, Sayangku!,<br>
         You make my world complete! 🎂🎁💕</p>
-        <br><p>You are My</p><br>
+        <br><p>For My</p><br>
         <p class="pangram">
             <span>I</span>ncredible, <span>N</span>oble, <span>D</span>ivine, <span>R</span>adiant, <span>A</span>mazing<br><br>
             <span>W</span>onderful, <span>A</span>dmirable, <span>H</span>umble, <span>Y</span>earning, <span>U</span>nique,
             <span>N</span>urturing, <span>I</span>nspiring<br><br><span>F</span>lawless, <span>I</span>rresistible, <span>R</span>emarkable, <span>L</span>lovely, <span>I</span>ncredible<br><br>
             <span>P</span>erfectly <span>A</span>wesome, <span>N</span>ice, <span>G</span>enuine, <span>E</span>xceptional
-            ,<span>S</span>plendid, <span>T</span>errific, <span>U</span>nforgettable 🎉🎈
+            ,<span>S</span>plendid, <span>T</span>errific, <span>U</span>nforgettable
         </p>
     </section>
+<div class="footer">Made with all my Love, Mahed Shahzad Nasir ❤️💋💋😘😘</div>
+<div class="heart" style="left: 10%; animation-delay: 0s;"></div>
+    <div class="heart" style="left: 20%; animation-delay: 1s;"></div>
+    <div class="heart" style="left: 30%; animation-delay: 2s;"></div>
+    <div class="heart" style="left: 40%; animation-delay: 3s;"></div>
+    <div class="heart" style="left: 50%; animation-delay: 4s;"></div>
+    <div class="heart" style="left: 60%; animation-delay: 5s;"></div>
+    <div class="heart" style="left: 70%; animation-delay: 6s;"></div>
+    <div class="heart" style="left: 80%; animation-delay: 7s;"></div>
+    <div class="heart" style="left: 90%; animation-delay: 8s;"></div>
     
     <script>
         function scrollToWish() {
