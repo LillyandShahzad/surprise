@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday My Love</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Great+Vibes&family=Raleway:wght@400;700&family=Pacifico&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            background: linear-gradient(to bottom right, #ff758c, #ff7eb3);
+            text-align: center;
+            font-family: 'Raleway', sans-serif;
+            opacity: 0;
+            animation: fadeIn 1.5s forwards;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        
+        .image-container {
+            position: relative;
+            width: 300px;
+            height: 533px;
+            background: #fff;
+            padding: 10px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+        
+        .touchable {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(255, 255, 255, 0.75);
+            color: #ff4757;
+            border: none;
+            padding: 15px 0;
+            width: 100%;
+            border-radius: 10px;
+            font-size: 18px;
+            font-family: 'Pacifico', cursive;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        
+        .touchable:hover {
+            background: rgba(255, 255, 255, 1);
+        }
+        
+        .wish-section {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: 50px;
+            font-family: 'Great Vibes', cursive;
+            font-size: 2rem;
+            color: white;
+        }
+
+        /* Updated font style for <p> under wish-section */
+        .wish-section p {
+            font-family: 'Dancing Script', cursive; /* Romantic and elegant font */
+            font-size: 1.8rem; /* Slightly larger for readability */
+            line-height: 1.6; /* Improved line spacing */
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        }
+
+        .pangram {
+            margin-top: 20px;
+            font-size: 0.8rem;
+            font-family: 'Raleway', sans-serif;
+            color: #ffeaa7;
+            max-width: 80%;
+        }
+        .pangram span {
+            font-weight: bold;
+            font-size: 3.0rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image-container">
+            <img src="image.png" alt="My Love">
+            <button class="touchable" onclick="scrollToWish()">Tap Here, Sayangku ❤️</button>
+        </div>
+    </div>
+    
+    <section class="wish-section" id="wish">
+        <p>Happy Birthday</p><br>
+        <h1>Indra Wahyuni Firli Pangestu! 🎉🎈</h1><br><br>
+        <p>To my Loving, Understanding, Loyal, Most Beautiful, Caring, Future Wife, and Favorite Person,</p>
+        <p>On this special day, I must confess, You light up my life, bringing happiness. With your heart so pure and true, May your birthday be filled with love and cheer.<br><br>For you, my dear, are so dear.<br><br><br>
+        Happy Birthday to you, Sayangku!,<br>
+        You make my world complete! 🎂🎁💕</p>
+        <br><p>You are My</p><br>
+        <p class="pangram">
+            <span>I</span>ncredible, <span>N</span>oble, <span>D</span>ivine, <span>R</span>adiant, <span>A</span>mazing<br><br>
+            <span>W</span>onderful, <span>A</span>dmirable, <span>H</span>umble, <span>Y</span>earning, <span>U</span>nique,
+            <span>N</span>urturing, <span>I</span>nspiring<br><br><span>F</span>lawless, <span>I</span>rresistible, <span>R</span>emarkable, <span>L</span>lovely, <span>I</span>ncredible<br><br>
+            <span>P</span>erfectly <span>A</span>wesome, <span>N</span>ice, <span>G</span>enuine, <span>E</span>xceptional
+            ,<span>S</span>plendid, <span>T</span>errific, <span>U</span>nforgettable 🎉🎈
+        </p>
+    </section>
+    
+    <script>
+        function scrollToWish() {
+            document.getElementById("wish").scrollIntoView({ behavior: "smooth" });
+        }
+    </script>
+</body>
+</html>
