@@ -1,197 +1,311 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Birthday My Love</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Great+Vibes&family=Raleway:wght@400;700&family=Pacifico&display=swap');
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            scroll-behavior: smooth;
-        }
-        
-        body {
-            background: linear-gradient(to bottom right, rgba(255, 117, 140, 0.8), rgba(255, 126, 179, 0.8)), url('image.png') no-repeat center center fixed;
-            text-align: center;
-            font-family: 'Raleway', sans-serif;
-            opacity: 0;
-            animation: fadeIn 1.5s forwards;
-        }
-        
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-        
-        .container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-        }
-        
-        .image-container {
-            position: relative;
-            width: 300px;
-            height: 533px;
-            background: #fff;
-            padding: 10px;
-            border-radius: 15px;
-            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
-            animation: float 3s ease-in-out infinite;
-        }
-        
-        @keyframes float {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-10px); }
-        }
-        
-        .image-container img {
-            width: 100%;
-            height: 100%;
-            border-radius: 10px;
-            object-fit: cover;
-        }
-        
-        .touchable {
-            position: absolute;
-            bottom: 10px;
-            left: 50%;
-            transform: translateX(-50%);
-            background: rgba(255, 255, 255, 0.75);
-            color: #ff4757;
-            border: none;
-            padding: 15px 0;
-            width: 100%;
-            border-radius: 10px;
-            font-size: 18px;
-            font-family: 'Pacifico', cursive;
-            cursor: pointer;
-            transition: 0.3s;
-        }
-        
-        .touchable:hover {
-            background: rgba(255, 255, 255, 1);
-        }
-        
-        .wish-section {
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            padding: 50px;
-            font-family: 'Great Vibes', cursive;
-            font-size: 2rem;
-            color: white;
-        }
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Happy Birthday Sayangku ❤️💋💋😘😘!</title>
+	<link rel="icon" href="image5.jpg" type="image/x-icon">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Great+Vibes&family=Raleway:wght@400;700&family=Pacifico&display=swap');
 
-        /* Updated font style for <p> under wish-section */
-        .wish-section p {
-            font-family: 'Dancing Script', cursive; /* Romantic and elegant font */
-            font-size: 1.8rem; /* Slightly larger for readability */
-            line-height: 1.6; /* Improved line spacing */
-            margin-bottom: 20px;
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-        }
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                scroll-behavior: smooth;
+            }
+	    
+            body {
+                background: linear-gradient(to bottom right, rgba(255, 117, 140, 0.8), rgba(255, 126, 179, 0.8)), url('image.png') no-repeat center center fixed;
+                text-align: center;
+                font-family: 'Raleway', sans-serif;
+                opacity: 0;
+                animation: fadeIn 1.5s forwards;
+            }
 
-        .pangram {
-            margin-top: 20px;
-            font-size: 0.5rem;
-           font-family: 'Dancing Script', cursive;
-            color: #ffeaa7;
-            max-width: 80%;
-        }
-        .pangram span {
-            font-weight: bold;
-            font-size: 3.5rem;
-        }
-   /* Heart Animation */
-        .heart {
-            position: absolute;
-            top: -10%;
-            width: 20px;
-            height: 20px;
-            background: #ff4757;
-            transform: rotate(-45deg);
-            animation: fall 5s linear infinite;
-        }
-        
-        .heart::before, .heart::after {
-            content: '';
-            position: absolute;
-            width: 20px;
-            height: 20px;
-            background: #ff4757;
-            border-radius: 50%;
-        }
-        
-        .heart::before {
-            top: -10px;
-            left: 0;
-        }
-        
-        .heart::after {
-            top: 0;
-            left: 10px;
-        }
-        
-        @keyframes fall {
-            0% { top: -10%; }
-            100% { top: 110%; }
-        }
-.footer {
-            margin: 50px 10px;
-            font-family: 'Dancing Script', cursive;
-            font-size: 1.2rem;
-            color: white;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <div class="image-container">
-            <img src="image.png" alt="My Love">
-            <button class="touchable" onclick="scrollToWish()">Tap Here, Sayangku ❤️</button>
+            @keyframes fadeIn {
+                from {
+                    opacity: 0;
+                }
+
+                to {
+                    opacity: 1;
+                }
+            }
+
+            .container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                height: 100vh;
+            }
+
+            .image-container {
+                position: relative;
+                width: 300px;
+                height: 533px;
+                background: #fff;
+                padding: 10px;
+                border-radius: 15px;
+                box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+                animation: float 3s ease-in-out infinite;
+            }
+
+            @keyframes float {
+
+                0%,
+                100% {
+                    transform: translateY(0);
+                }
+
+                50% {
+                    transform: translateY(-10px);
+                }
+            }
+
+            .image-container img {
+                width: 100%;
+                height: 100%;
+                border-radius: 10px;
+                object-fit: cover;
+            }
+
+            .touchable {
+                position: absolute;
+                bottom: 10px;
+                left: 50%;
+                transform: translateX(-50%);
+                background: rgba(255, 255, 255, 0.75);
+                color: #ff4757;
+                border: none;
+                padding: 15px 0;
+                width: 100%;
+                border-radius: 10px;
+                font-size: 18px;
+                font-family: 'Pacifico', cursive;
+                cursor: pointer;
+                transition: 0.3s;
+            }
+
+            .touchable:hover {
+                background: rgba(255, 255, 255, 1);
+            }
+
+            .wish-section {
+                min-height: 100vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                padding: 50px;
+                font-family: 'Great Vibes', cursive;
+                font-size: 2rem;
+                color: white;
+            }
+
+            /* Updated font style for 
+					
+					
+					<p> under wish-section */
+            .wish-section p {
+                font-family: 'Dancing Script', cursive;
+                /* Romantic and elegant font */
+                font-size: 1.8rem;
+                /* Slightly larger for readability */
+                line-height: 1.6;
+                /* Improved line spacing */
+                margin-bottom: 20px;
+                text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+            }
+
+            .pangram {
+                margin-top: 20px;
+                font-size: 0.5rem;
+                font-family: 'Dancing Script', cursive;
+                color: #ffeaa7;
+                max-width: 80%;
+            }
+
+            .pangram span {
+                font-weight: bold;
+                font-size: 3.5rem;
+            }
+
+            /* Heart Animation */
+            .heart {
+                position: absolute;
+                top: -10%;
+                width: 20px;
+                height: 20px;
+                background: #ff4757;
+                transform: rotate(-45deg);
+                animation: fall 5s linear infinite;
+            }
+
+            .heart::before,
+            .heart::after {
+                content: '';
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                background: #ff4757;
+                border-radius: 50%;
+            }
+
+            .heart::before {
+                top: -10px;
+                left: 0;
+            }
+
+            .heart::after {
+                top: 0;
+                left: 10px;
+            }
+
+            @keyframes fall {
+                0% {
+                    top: -10%;
+                }
+
+                100% {
+                    top: 110%;
+                }
+            }
+
+            .footer {
+                padding: 50px 20px;
+                font-family: 'Dancing Script', cursive;
+                font-size: 1.2rem;
+                color: white;
+            }
+
+            .image-gallery {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 20px;
+                margin: 40px 0;
+            }
+
+            .image-card {
+                width: 250px;
+                height: 250px;
+                background: #fff;
+                box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+                border-top: 10px solid #fff;
+                border-left: 10px solid #fff;
+                border-right: 10px solid #fff;
+                border-bottom: 40px solid #fff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transform: rotate(calc(45deg + (random() * 90deg)));
+            }
+
+            .image-card img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            @media (max-width: 600px) {
+                .image-gallery {
+                    flex-direction: column;
+                    align-items: center;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="image-container">
+                <img src="image.png" alt="My Love">
+                <button class="touchable" onclick="scrollToWish()">Tap Here, Sayangku ❤️</button>
+            </div>
         </div>
-    </div>
-    
-    <section class="wish-section" id="wish">
-        <p>Happy Birthday</p><br>
-        <h1>Indra Wahyuni Firli Pangestu! 🎉🎈</h1><br><br>
-        <p>To my Loving, Understanding, Loyal, Most Beautiful, Caring, Future Wife, and Favorite Person,</p>
-        <p>On this special day, I must confess, You light up my life, bringing happiness. With your heart so pure and true, May your birthday be filled with love and cheer.<br><br>For you, my dear, are so dear.<br><br><br>
-        Happy Birthday to you, Sayangku!,<br>
-        You make my world complete! 🎂🎁💕</p>
-        <br><p>For My</p><br>
-        <p class="pangram">
-            <span>I</span>ncredible<br><span>N</span>oble<br><span>D</span>ivine<br><span>R</span>adiant<br><span>A</span>mazing<br><br>
-            <span>W</span>onderful<br><span>A</span>dmirable<br><span>H</span>umble<br><span>Y</span>earning<br><span>U</span>nique<br>
-            <span>N</span>urturing<br><span>I</span>nspiring<br><br><span>F</span>lawless<br><span>I</span>rresistible<br><span>R</span>emarkable<br><span>L</span>lovely<br><span>I</span>ncredible<br><br>
-            <span>P</span>erfectly<br><span>A</span>wesome<br><span>N</span>ice<br><span>G</span>enuine<br><span>E</span>xceptional
-            <br><span>S</span>plendid<br><span>T</span>errific<br><span>U</span>nforgettable
-        </p>
-    </section>
-<div class="footer">Made with all my Love<br>Your Mahed Shahzad Nasir ❤️💋💋😘😘</div>
-<div class="heart" style="left: 10%; animation-delay: 0s;"></div>
-    <div class="heart" style="left: 20%; animation-delay: 1s;"></div>
-    <div class="heart" style="left: 30%; animation-delay: 2s;"></div>
-    <div class="heart" style="left: 40%; animation-delay: 3s;"></div>
-    <div class="heart" style="left: 50%; animation-delay: 4s;"></div>
-    <div class="heart" style="left: 60%; animation-delay: 5s;"></div>
-    <div class="heart" style="left: 70%; animation-delay: 6s;"></div>
-    <div class="heart" style="left: 80%; animation-delay: 7s;"></div>
-    <div class="heart" style="left: 90%; animation-delay: 8s;"></div>
-    
-    <script>
-        function scrollToWish() {
-            document.getElementById("wish").scrollIntoView({ behavior: "smooth" });
-        }
-    </script>
-</body>
+        <section class="wish-section" id="wish">
+            <p>Happy Birthday</p>
+            <br>
+            <h1>Indra Wahyuni Firli Pangestu! 🎉🎈</h1>
+            <br>
+            <br>
+            <p>To my Loving, Understanding, Loyal, Most Beautiful, Caring, Future Wife, and Favorite Person,</p>
+            <p>On this special day, I must confess, You light up my life, bringing happiness. With your heart so pure and true, May your birthday be filled with love and cheer. <br>
+                <br>For you, my dear, are so dear. <br>
+                <br>
+                <br> Happy Birthday to you, Sayangku!, <br> You make my world complete! 🎂🎁💕
+            </p>
+            <br>
+            <br>
+            <div class="image-gallery">
+                <div class="image-card" style="transform: rotate(25deg);">
+                    <img src="image-1.jpg" alt="Memory 1">
+                </div>
+                <div class="image-card" style="transform: rotate(-30deg);">
+                    <img src="image2.jpg" alt="Memory 2">
+                </div>
+                <div class="image-card" style="transform: rotate(-10deg);">
+                    <img src="image3.jpg" alt="Memory 3">
+                </div>
+                <div class="image-card" style="transform: rotate(20deg);">
+                    <img src="image4.jpg" alt="Memory 4">
+                </div>
+                <div class="image-card" style="transform: rotate(-25deg);">
+                    <img src="image5.jpg" alt="Memory 5">
+                </div>
+            </div>
+            <br>
+            <br>
+            <p>For My</p>
+            <br>
+            <p class="pangram">
+                <span>I</span>ncredible <br>
+                <span>N</span>oble <br>
+                <span>D</span>ivine <br>
+                <span>R</span>adiant <br>
+                <span>A</span>mazing <br>
+                <br>
+                <span>W</span>onderful <br>
+                <span>A</span>dmirable <br>
+                <span>H</span>umble <br>
+                <span>Y</span>earning <br>
+                <span>U</span>nique <br>
+                <span>N</span>urturing <br>
+                <span>I</span>nspiring <br>
+                <br>
+                <span>F</span>lawless <br>
+                <span>I</span>rresistible <br>
+                <span>R</span>emarkable <br>
+                <span>L</span>ovely <br>
+                <span>I</span>ncredible <br>
+                <br>
+                <span>F</span>antastic <br>
+                <span>A</span>wesome <br>
+                <span>N</span>ice <br>
+                <span>G</span>enuine <br>
+                <span>E</span>xceptional <br>
+                <span>S</span>plendid <br>
+                <span>T</span>errific <br>
+                <span>U</span>nforgettable
+            </p>
+        </section>
+        <div class="footer">Made with all my Love <br>Your Mahed Shahzad Nasir ❤️💋💋😘😘 </div>
+        <div class="heart" style="left: 10%; animation-delay: 0s;"></div>
+        <div class="heart" style="left: 20%; animation-delay: 1s;"></div>
+        <div class="heart" style="left: 30%; animation-delay: 2s;"></div>
+        <div class="heart" style="left: 40%; animation-delay: 3s;"></div>
+        <div class="heart" style="left: 50%; animation-delay: 4s;"></div>
+        <div class="heart" style="left: 60%; animation-delay: 5s;"></div>
+        <div class="heart" style="left: 70%; animation-delay: 6s;"></div>
+        <div class="heart" style="left: 80%; animation-delay: 7s;"></div>
+        <div class="heart" style="left: 90%; animation-delay: 8s;"></div>
+        <script>
+            function scrollToWish() {
+                document.getElementById("wish").scrollIntoView({
+                    behavior: "smooth"
+                });
+            }
+        </script>
+    </body>
 </html>
