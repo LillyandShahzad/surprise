@@ -352,7 +352,7 @@ document.getElementById("main").style.display = "none";
                 
                 document.getElementById("timer").innerText = `${hours}:${minutes}:${seconds}	`;
                 
-                if (secondsLeft <= 60) {
+                if (secondsLeft < 60) {
                     document.getElementById("timer").style.display = "none";
                     document.getElementById("bigCountdown").style.display = "block";
                     document.getElementById("bigCountdown").innerText = seconds;
